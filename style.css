@@ -1,0 +1,43 @@
+p {
+    color: white;
+}
+html {
+    background-color: black;
+    color: aqua;
+}
+#missao {
+    font-style: italic;
+    color: orange
+}
+.red {
+    color: red;
+}
+.yellow-bg {
+    background-color: yellowgreen;
+}
+.fancy {
+    font-weight: bold;
+    text-shadow: 4px 4px 3px blue;
+}
+.warning {
+    background-color: red;
+}
+p.warning {
+    color: yellow;
+}
+.special {
+    background-color: yellow;
+    font-weight: bold;
+}
+.warning.special {
+    color: blue;
+}
+a[href^="https"] {
+    background-color: gold;
+}
+*{
+    text-align: center;
+}
+*[lang^="en"]{
+    color: green
+}
