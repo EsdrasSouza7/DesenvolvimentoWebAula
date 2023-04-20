@@ -3,7 +3,7 @@ p {
 }
 html {
     background-color: black;
-    color: aqua;
+    color: white;
 }
 #missao {
     font-style: italic;
@@ -40,4 +40,29 @@ a[href^="https"] {
 }
 *[lang^="en"]{
     color: green
+}
+h1,h2,h3, span.titulo {
+    color:firebrick;
+}
+#ad li.important strong {
+    text-decoration: underline;
+    color: orange;
+}
+strong {
+    color: green;
+}
+div>strong {
+    color: purple;
+}
+#TSpan span{
+    color: blue;
+}
+#TSpan p ~ span{
+    color: red;
+}
+#ASpan span{
+    color: blue;
+}
+#ASpan p + span{
+    color: red;
 }
