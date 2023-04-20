@@ -18,6 +18,9 @@ figcaption {
     font-size: 1.2em;
     font-weight: bold;
 }
+figcaption::before{
+    content: '📷';
+}
 
 img {
     width: 100%;
@@ -25,9 +28,12 @@ img {
     border: black;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 5px;
+    margin-bottom: 5px;
 }
 
-img:hover {}
+img:hover {
+    filter: brightness(120%);
+}
 
 a[href^="https"] {
     color: #007bff;
