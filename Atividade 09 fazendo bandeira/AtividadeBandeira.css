@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.Italia {
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border: 0.5px solid black;
+}
+
+.Italia>.verde {
+    background-color: rgb(2, 190, 2);
+    height: 150px;
+    width: 200px;
+
+}
+
+.Italia>.branco {
+    background-color: white;
+    height: 150px;
+    width: 200px;
+}
+
+.Italia>.vermelho {
+    background-color: red;
+    height: 150px;
+    width: 200px;
+}
+
+.Ucrania {
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid black;
+}
+
+.Ucrania>.azul {
+    background-color: rgb(0, 199, 199);
+    height: 150px;
+    width: 200px;
+}
+
+.Ucrania>.amarelo {
+    background-color: yellow;
+    height: 150px;
+    width: 200px;
+}
+
+.Alemanha {
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid black;
+}
+
+.Alemanha>.preto {
+    background-color: black;
+    height: 150px;
+    width: 200px;
+}
+
+.Alemanha>.vermelho {
+    background-color: rgb(194, 0, 0);
+    height: 150px;
+    width: 200px;
+}
+
+.Alemanha>.amarelo {
+    background-color: rgb(185, 185, 0);
+    height: 150px;
+    width: 200px;
+}

@@ -5,8 +5,6 @@ html {
 h1 {
     text-align: center;
     font-weight: bold;
-
-
 }
 
 figure {
@@ -18,7 +16,8 @@ figcaption {
     font-size: 1.2em;
     font-weight: bold;
 }
-figcaption::before{
+
+figcaption::before {
     content: '📷';
 }
 
