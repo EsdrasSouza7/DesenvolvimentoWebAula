@@ -1,0 +1,21 @@
+h2{
+    font-size: 1.2em;
+}
+p{
+    color: #333;
+}
+p.price{
+    font-weight: bold;
+}
+
+
+
+li{
+    border-color: purple;
+    border-style: dotted;
+    border-radius: 10px;
+    border-width: 2px;
+}
+h1{
+    text-align: center;
+}

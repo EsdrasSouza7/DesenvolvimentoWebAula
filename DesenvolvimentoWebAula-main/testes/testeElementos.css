@@ -1,0 +1,11 @@
+p {
+    background-color: gray;
+    margin: 0px;
+}
+
+#context {
+    float: right;
+    text-align: right;
+    background-color: purple;
+    color: white;
+}

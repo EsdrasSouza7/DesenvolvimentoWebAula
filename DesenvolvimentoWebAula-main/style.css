@@ -1,0 +1,68 @@
+p {
+    color: white;
+}
+html {
+    background-color: black;
+    color: white;
+}
+#missao {
+    font-style: italic;
+    color: orange
+}
+.red {
+    color: red;
+}
+.yellow-bg {
+    background-color: yellowgreen;
+}
+.fancy {
+    font-weight: bold;
+    text-shadow: 4px 4px 3px blue;
+}
+.warning {
+    background-color: red;
+}
+p.warning {
+    color: yellow;
+}
+.special {
+    background-color: yellow;
+    font-weight: bold;
+}
+.warning.special {
+    color: blue;
+}
+a[href^="https"] {
+    background-color: gold;
+}
+*{
+    text-align: center;
+}
+*[lang^="en"]{
+    color: green
+}
+h1,h2,h3, span.titulo {
+    color:firebrick;
+}
+#ad li.important strong {
+    text-decoration: underline;
+    color: orange;
+}
+strong {
+    color: green;
+}
+div>strong {
+    color: purple;
+}
+#TSpan span{
+    color: blue;
+}
+#TSpan p ~ span{
+    color: red;
+}
+#ASpan span{
+    color: blue;
+}
+#ASpan p + span{
+    color: red;
+}

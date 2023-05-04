@@ -1,0 +1,43 @@
+html {
+    background-color: gray;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+figure {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+figcaption {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+figcaption::before {
+    content: '📷';
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px;
+    margin-bottom: 5px;
+}
+
+img:hover {
+    filter: brightness(120%);
+}
+
+a[href^="https"] {
+    color: #007bff;
+}
+
+a[href^="https"]:hover {
+    color: rgb(25, 0, 255);
+}
