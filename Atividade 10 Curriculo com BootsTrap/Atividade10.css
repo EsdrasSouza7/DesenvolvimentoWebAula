@@ -1,0 +1,27 @@
+.cabesalho {
+    background-color: rgb(0, 0, 94);
+    color: white;
+}
+
+.linka a {
+    float: right;
+}
+
+.grid {
+    display: flex;
+
+}
+
+.Experience {
+    align: left;
+    width: 85%;
+}
+
+.Education {
+    align: left;
+    height: 20%;
+}
+
+.Award {
+    align: left;
+}
