@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="asents/js/vue.js"></script>
+    <script src="asents/js/axios.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{Titulo}}</h1>
+        <ul v-for="info in infos">
+            <li>
+                <h3>{{info.code}}</h3>
+            </li>
+            <li>{{info.symbol}}</li>
+            <li>{{info.rate}}</li>
+        </ul>
+    </div>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                mensagem: "Essa é minha mensagem",
+            },
+            methods: {
+                onLoadPage: function () {
+                    alert(this.mensagem);
+                }
+            },
+            mounted() {
+                axios.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+            },
+        })
+    </script>
+</body>
+
+</html>
