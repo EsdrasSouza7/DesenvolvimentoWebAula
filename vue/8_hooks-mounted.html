@@ -15,13 +15,13 @@
             data: {
                 mensagem: 'Essa é minha mensagem'
             },
-            <!-- guarda info em cache-->
-            computed:{
+            methods:{
                 onLoadPage: function(){
                     alert(this.mensagem);
                 }
             },
-            created(){
+            <!-- para processar dados assim que a pagina for carregada-->
+            mounted: function (){
                 this.onLoadPage()
             }
         });

@@ -7,17 +7,16 @@
 </head>
 <body>
     <div id="app">
-        <h1 :style="myStyle">{{mensagem}}</h1>
-        <button v-on:click="exibirAlerta">Clique aqui</button>
-        <br><br>
-        <button v-on:click="mudaCor">Mude a cor do h1</button>
+        <h1> {{ listas[1].idioma }}</h1>
+        <h1 v-text="listas[1].id + 1"> {{ listas[1].idioma }}</h1>
+        <h1 > {{ verifica ? listas[0].nome : 'Adeus, amigo!' }}</h1>
 
     </div>
     <script>
         var app = new Vue({
             el: '#app',
             data: {
-                mensagem: 'Essa é minha mensagem',
+                mensagem: 'Olá, Vue.js! Meu olá, mundo!',
                 listas: [
                     {
                         id: 1,
@@ -35,21 +34,7 @@
                         idioma: 'Espanhol'
                     }
                 ],
-                myStyle: {
-                    color: 'blue'
-                },
                 verifica: true
-            },
-           <!-- as funcoes ficam dentro dos metodos. Temos que evitar usar arrow functions -->
-            methods:{
-                exibirAlerta: function(){
-                    var mensagem = "Essa daqui é outra mensagem"
-                    alert(mensagem);
-                },
-                
-                mudaCor: function () {
-                    this.verifica ? this.myStyle = {color: 'blue'} : this.myStyle = {color: 'red'}  ;
-                    this.verifica = !this.verifica                }
             }
         });
     </script>

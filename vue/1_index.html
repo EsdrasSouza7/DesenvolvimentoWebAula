@@ -7,22 +7,19 @@
 </head>
 <body>
     <div id="app">
-
+        <!-- usando syntax  mustache-->
+        <h1> {{ mensagem }}</h1>
+        <!-- usando diretivas-->
+        <h1 v-text="mensagem"></h1>
     </div>
     <script>
+        <!-- para instanciar o app -->
         var app = new Vue({
+            <!-- propriedade elemento -->
             el: '#app',
+            <!-- propriedade data -->
             data: {
-                mensagem: 'Essa é minha mensagem'
-            },
-            <!-- guarda info em cache-->
-            computed:{
-                onLoadPage: function(){
-                    alert(this.mensagem);
-                }
-            },
-            created(){
-                this.onLoadPage()
+                mensagem: 'Olá, Vue.js! Meu olá, mundo!'
             }
         });
     </script>

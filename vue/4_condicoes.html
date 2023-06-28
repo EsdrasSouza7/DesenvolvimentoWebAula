@@ -7,17 +7,16 @@
 </head>
 <body>
     <div id="app">
-        <h1 :style="myStyle">{{mensagem}}</h1>
-        <button v-on:click="exibirAlerta">Clique aqui</button>
-        <br><br>
-        <button v-on:click="mudaCor">Mude a cor do h1</button>
+       <h1 v-if="numero > 4"> O numero {{numero}} é maior que 4  </h1>
+        <h1 v-else-if="numero == 4 "> O numero {{numero}} é igual a 4</h1>
+        <h1 v-else> O numero não é maior e nem igual a {{numero}}</h1>
 
     </div>
     <script>
         var app = new Vue({
             el: '#app',
             data: {
-                mensagem: 'Essa é minha mensagem',
+                mensagem: 'Olá, Vue.js! Meu olá, mundo!',
                 listas: [
                     {
                         id: 1,
@@ -35,21 +34,8 @@
                         idioma: 'Espanhol'
                     }
                 ],
-                myStyle: {
-                    color: 'blue'
-                },
-                verifica: true
-            },
-           <!-- as funcoes ficam dentro dos metodos. Temos que evitar usar arrow functions -->
-            methods:{
-                exibirAlerta: function(){
-                    var mensagem = "Essa daqui é outra mensagem"
-                    alert(mensagem);
-                },
-                
-                mudaCor: function () {
-                    this.verifica ? this.myStyle = {color: 'blue'} : this.myStyle = {color: 'red'}  ;
-                    this.verifica = !this.verifica                }
+                verifica: false,
+                numero: 5
             }
         });
     </script>

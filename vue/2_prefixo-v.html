@@ -7,22 +7,15 @@
 </head>
 <body>
     <div id="app">
-
+       <h1 v-bind:title="titulo" v-html="mensagem"></h1>
     </div>
     <script>
         var app = new Vue({
             el: '#app',
             data: {
-                mensagem: 'Essa é minha mensagem'
-            },
-            <!-- guarda info em cache-->
-            computed:{
-                onLoadPage: function(){
-                    alert(this.mensagem);
-                }
-            },
-            created(){
-                this.onLoadPage()
+                mensagem: '<u>Olá, Vue.js! Meu olá, mundo!</u>',
+                titulo: "Meu titulo novo"
+
             }
         });
     </script>
